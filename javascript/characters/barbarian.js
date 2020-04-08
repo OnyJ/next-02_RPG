@@ -1,5 +1,5 @@
 class Barbarian extends Character {
-  constructor(name, healthPoints, mana, strength, defence, isAlive, axe = 6, sword = 12, shield = 15, shieldIsUsed = false) {
+  constructor(name, healthPoints, mana, strength, defence, isAlive, axe = 10, sword = 12, shield = 15, shieldIsUsed = false) {
     super(name, healthPoints, mana, strength, defence, isAlive)
     this.axe    = axe;
     this.sword  = sword;
