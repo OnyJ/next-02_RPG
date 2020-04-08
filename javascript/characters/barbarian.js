@@ -30,7 +30,7 @@ class Barbarian extends Character {
     let damages = this.strength + this.sword;
 
     if ((this.isAlive === true) && (this.mana >= damages)) {
-      this.mana -= this.strength + this.sword;
+      this.mana -= damages;
       return victim.takeDamages(damages, this.name);
     }
     console.log("Not enough mana to sword attack");
