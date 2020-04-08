@@ -1,8 +1,8 @@
 class Character {
-  constructor(hp, mana, damages, defence, name) {
+  constructor(hp, mana, strength, defence, name) {
     this.hp = hp;
     this.mana = mana;
-    this.damages = damages;
+    this.strength = strength;
     this.defence = defence;
     this.name = name;
   }
@@ -20,7 +20,7 @@ class Character {
   }
 
   fury() {
-    
+    this.strength += 30;
   }
 }
 
