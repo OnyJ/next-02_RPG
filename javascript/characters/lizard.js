@@ -21,7 +21,7 @@ class Lizard extends Character {
   }
 
 
-  dealDamagesWithtailBash = (victim) => {
+  dealDamagesWithTailBash = (victim) => {
     if ((this.isAlive === true) && (this.mana >= this.strength)) {
       this.mana -= this.strength;
       return victim.takeDamages(this.strength + this.tailBash, this.name);
