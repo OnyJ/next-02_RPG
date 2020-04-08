@@ -57,25 +57,3 @@ class Barbarian extends Character {
     console.log(`${this.name} attacked by ${ennemy} is now ${this.healthPoints}HP`);
   }
 }
-
-let jack = new Barbarian("Jack");
-let bob  = new Barbarian("bob");
-jack.show();
-jack.specialities();
-console.log();
-
-bob.show();
-bob.specialities();
-console.log();
-
-jack.dealDamagesWithAxe(bob);
-jack.dealDamagesWithSword(bob);
-jack.dealDamagesWithSword(bob);
-jack.dealDamagesWithSword(bob);
-jack.dealDamagesWithSword(bob);
-jack.dealDamagesWithSword(bob);
-jack.dealDamagesWithSword(bob);
-jack.show();
-bob.dealDamages(jack);
-console.log();
-

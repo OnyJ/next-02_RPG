@@ -5,13 +5,13 @@ class Character {
     this.strength = strength;
     this.defence = defence;
     this.name = name;
-    this.isAlive = isAlive;;
+    this.isAlive = isAlive;
   }
 
   show() {
     console.log(`>> ${this.name}`);
     if (this.healthPoints <= 0)
-      console.log(" Is huh dead...")
+      console.log(" Is huh dead...");
     else
       console.log(`HP: ${this.healthPoints}`);
     console.log(`Mana : ${this.mana}`);
@@ -21,6 +21,6 @@ class Character {
 
   fury() {
     this.strength += 30;
-    console.log(`${this.name} is in fury !`)
+    console.log(`${this.name} is in fury !`);
   }
 }
