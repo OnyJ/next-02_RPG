@@ -1,21 +1,26 @@
 class Character {
-  constructor(hp, mana, defence, name) {
+  constructor(hp, mana, damages, defence, name) {
     this.hp = hp;
     this.mana = mana;
+    this.damages = damages;
     this.defence = defence;
     this.name = name;
   }
 
   show() {
-    console.log(`>> ${this.name}`)
-    console.log(`HP: ${this.hp}`)
-    console.log(`Mana : ${this.mana}`)
-    console.log(`Defence : ${this.defence}`)
+    console.log(`>> ${this.name}`);
+    console.log(`HP: ${this.hp}`);
+    console.log(`Mana : ${this.mana}`);
+    console.log(`Defence : ${this.defence}`);
   }
 
   hurt(damages) {
     this.hp -= damages
-    console.log(`Ouch -> ${this.hp}`)
+    console.log(`Ouch -> ${this.hp}`);
+  }
+
+  fury() {
+    
   }
 }
 
