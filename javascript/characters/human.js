@@ -11,7 +11,7 @@ class Human extends Character {
   specialities() {
     console.log(`Fire torch : +${this.fireTorch} damages`);
     console.log(`Rifle : +${this.rifle} damages`);
-    console.log(`healthKit : +${this.healthKit} health`);
+    console.log(`healthKit : +${this.healthKit} HP`);
   }
 
 
@@ -41,7 +41,7 @@ class Human extends Character {
   }
 
 
-  usehealthKit = () => {
+  useHealthKit = () => {
     if (this.isAlive === true && this.healthKitIsUsed === false)
       this.healthPoints += this.healthKit;
     this.healthKitIsUsed = true;
