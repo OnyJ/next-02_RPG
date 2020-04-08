@@ -7,14 +7,19 @@ class Character {
   }
 
   show() {
-    console.log(`
-      >> ${this.name}
-      HP: ${this.hp}
-      Mana : ${this.mana}
-      Defence : ${this.defence}
-    `);
+    console.log(`>> ${this.name}`)
+    console.log(`HP: ${this.hp}`)
+    console.log(`Mana : ${this.mana}`)
+    console.log(`Defence : ${this.defence}`)
+  }
+
+  hurt(damages) {
+    this.hp -= damages
+    console.log(`Ouch -> ${this.hp}`)
   }
 }
 
 let guy = new Character(100, 60, 50, "Jack");
 guy.show();
+guy.hurt(12);
+guy.hurt(8);
