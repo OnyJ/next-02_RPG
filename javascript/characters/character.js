@@ -10,29 +10,17 @@ class Character {
 
   show() {
     console.log(`>> ${this.name}`);
-    console.log(`HP: ${this.healthPoints}`);
+    if (this.healthPoints <= 0)
+      console.log(" Is huh dead...")
+    else
+      console.log(`HP: ${this.healthPoints}`);
     console.log(`Mana : ${this.mana}`);
+    console.log(`Strength : ${this.strength}`);
     console.log(`Defence : ${this.defence}`);
-  }
-
-  takeDamage = (damages) => {
-    this.healthPoints -= damages;
-    if (this.healthPoints <= 0) {
-      this.isAlive = false;
-      console.log("I just died");
-    }
-    console.log(`Ouch -> ${this.healthPoints}`);
   }
 
   fury() {
     this.strength += 30;
+    console.log(`${this.name} is in fury !`)
   }
 }
-
-
-let jack = new Character("Jack");
-jack.show();
-jack.takeDamage(5);
-jack.show();
-jack.fury();
-jack.show();
