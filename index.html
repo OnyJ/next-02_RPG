@@ -1,17 +1,59 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>RPG</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="stylesheets/bootstrap.css"> 
+  <link rel="stylesheet" href="stylesheets/custom.css"> 
+  <title>RPG</title>
+</head>
 
-  <body>
-    <script src="javascript/index.js"></script>
-    <script src="javascript/characters/character.js"></script>
-    <script src="javascript/characters/fighter.js"></script>
-    <script src="javascript/characters/paladin.js"></script>
-    <script src="javascript/characters/healer.js"></script>
-    <script src="javascript/characters/berzerker.js"></script>
-    <script src="javascript/characters/assassin.js"></script>
-  </body>
+<body>
+  <main>
+    <h1 class="bg-secondary">Test</h1>
+    <!-- Game Set Section -->
+    <section id="gameSet">
+
+      <div id="choseCharacter">
+        <!-- character cards -->
+      </div>
+
+      <div id="changeStats">
+        <div id="statsFormSection">
+          <!-- stats form -->
+        </div>
+        <div id="choseDifficulty">
+          <!-- select number of ennemies -->
+        </div>  
+      </div>
+
+    </section>
+    <!-- End Game Set Section -->
+
+
+    <!-- Game Running Section -->
+    <section id="gameRunning">
+      <div id="header"></div>
+      <div id="player"></div>
+      <div id="dialog"></div>
+      <div id="ennemies"></div>
+    </section>
+    <!-- End Game Running Section -->
+
+    
+    <!-- EndGame Section -->
+    <section id="endGame">
+      <div></div>
+    </section>
+    <!-- End EndGame Section -->
+  </main>
+
+  <script src="javascript/index.js"></script>
+  <script src="javascript/characters/character.js"></script>
+  <script src="javascript/characters/fighter.js"></script>
+  <script src="javascript/characters/paladin.js"></script>
+  <script src="javascript/characters/healer.js"></script>
+  <script src="javascript/characters/berzerker.js"></script>
+  <script src="javascript/characters/assassin.js"></script>
+</body>
+
 </html>
