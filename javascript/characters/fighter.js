@@ -8,9 +8,14 @@ class Fighter extends Character {
   }
   
   specialities() {
-    console.log(`Dark vision : 5dmg, +2protect, -20mana`)
+    console.log(`Dark vision : 5dmg +2protect -20mana`)
     console.log(`Sword : +${this.sword} damages`);
     console.log(`Shield : +${this.shield} defence`);
+  }
+
+  dealDamages = (victim) => {
+    if (this.isAlive === true)
+      victim.takeDamages(this.dmg, this.name);
   }
 
   darkVision = (victim) => {
@@ -20,11 +25,6 @@ class Fighter extends Character {
       return victim.takeDamages(5, this.name);
     }
     console.log("Not enough mana for dark vision");
-  }
-
-  dealDamages = (victim) => {
-    if (this.isAlive === true)
-      victim.takeDamages(this.dmg, this.name);
   }
 
   dealDamagesWithSword = (victim) => {

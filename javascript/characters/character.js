@@ -1,5 +1,5 @@
 class Character {
-  constructor(name, hp, mana, dmg, defence = 0, isAlive = true) {
+  constructor(name, hp, mana, dmg, defence = 0, status = "playing", isAlive = true) {
     this.hp = hp;
     this.mana = mana;
     this.dmg = dmg;
