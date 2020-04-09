@@ -1,8 +1,8 @@
 class Character {
-  constructor(name, healthPoints = 100, mana = 70, strength = 8, defence = 0, isAlive = true) {
-    this.healthPoints = healthPoints;
+  constructor(name, hp, mana, dmg, defence = 0, isAlive = true) {
+    this.hp = hp;
     this.mana = mana;
-    this.strength = strength;
+    this.dmg = dmg;
     this.defence = defence;
     this.name = name;
     this.isAlive = isAlive;
@@ -10,17 +10,17 @@ class Character {
 
   show() {
     console.log(`>> ${this.name}`);
-    if (this.healthPoints <= 0)
+    if (this.hp <= 0)
       console.log(" Is huh dead...");
     else
-      console.log(`HP: ${this.healthPoints}`);
+      console.log(`HP: ${this.hp}`);
     console.log(`Mana : ${this.mana}`);
-    console.log(`Strength : ${this.strength}`);
+    console.log(`dmg : ${this.dmg}`);
     console.log(`Defence : ${this.defence}`);
   }
 
   fury() {
-    this.strength += 30;
+    this.dmg += 30;
     console.log(`${this.name} is in fury !`);
   }
 }
