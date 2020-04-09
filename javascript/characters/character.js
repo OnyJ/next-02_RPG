@@ -1,10 +1,11 @@
 class Character {
   constructor(name, hp, mana, dmg, defence = 0, status = "playing", isAlive = true) {
-    this.hp = hp;
-    this.mana = mana;
-    this.dmg = dmg;
+    this.hp      = hp;
+    this.mana    = mana;
+    this.dmg     = dmg;
     this.defence = defence;
-    this.name = name;
+    this.status  = status;
+    this.name    = name;
     this.isAlive = isAlive;
   }
 
@@ -20,7 +21,7 @@ class Character {
   }
 
   fury() {
-    this.dmg += 30;
+    this.dmg += 3;
     console.log(`${this.name} is in fury !`);
   }
 }
